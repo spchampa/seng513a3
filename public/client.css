@@ -1,0 +1,136 @@
+/*
+	NAME:		Steven Champagne
+	UCID:		10038946
+	Tutorial:	B03 (MW@2PM)
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 13px Helvetica, Arial;
+}
+
+form {
+    padding:2vh, 0px;
+}
+
+input {
+    width: 84vw;
+    float:left;
+    padding:inherit;
+}
+
+button {
+    width: 12vw;
+    padding: inherit;
+    background: rgb(130, 224, 255);
+    border: none;
+    float: right;
+}
+
+#messages { 
+    list-style-type: none;
+	position: absolute;
+	bottom: 7vh;
+	overflow-y: scroll;
+    max-height: inherit;
+    width: 75vw;
+    float:left;
+    
+}
+
+#messages li {
+    padding: 5px 10px;
+}
+
+#user-list { 
+    list-style-type: none;
+    width: 18vw;
+	position: absolute;
+	bottom: 7vh;
+	overflow-y: scroll;
+    max-height: inherit;
+    float:right;
+}
+
+#user-list li {
+    padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+    background: #eee;
+}
+
+/* new stuff*/
+
+/* Full Page Container */
+.container{
+	background: gray; 
+	width:100%;
+    height:100vh;
+    border-width: 2vh 2vw;
+    border-style:solid;
+    border-color: lightgray; 
+    
+}
+
+/* Active chat box, under the 'user name is: XXXX' box */
+.chat-container {
+	overflow: auto;	
+	background: gray;
+	max-height: 87vh;	
+	width:75vw;
+	float:left;
+    word-wrap: break-word;
+}
+
+#chat-users-boundary{
+    background: lightgray;
+    width:2vw;
+    height:87vh;
+    margin-left: 75vw;
+    margin-right: 20vw;
+}
+
+/* beside the active chat box */
+.users-container {
+    background: lightgray;
+    width:18vw;
+    max-height:87vh;
+    float:right;
+}
+
+/* holds the input box and send button */
+.input-container{
+    padding: 2vh 0px;
+    position: fixed;
+    bottom: 0;
+    width: 96vw;
+    background: lightgray;
+}
+
+/* holds the username is and online users boxes */
+.header {
+	background:lightgray;
+	height:4vh;
+	width:96vw;
+}
+
+#user-name {
+	background:lightgray;
+	height:20px;
+	width:75vw;
+	float:left;
+}
+
+#users-online {
+    height:20px;
+    width:18vw;
+    float:right;
+    background:lightgray;
+}
